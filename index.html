@@ -1,92 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>SHOPPING PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING CART</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<div class="container">
-		<nav>
-			<div class="row1">
-				
-				<div class="col-md-2" >
-					Sizes
-				</div>
+    <div class="container-fluid">
+        <div class="main-wrap">
+            <div class="row">
 
-				<div class="col-md-10">
-					
-					<div class="col-md-8" align="left">
-						16 Product(s) found
-					</div>
-					<div class="col-md-2" align="right">
-  						Order by
-  						<button class="btn btn-default">Select</button>
-					</div>
+                <div class="col-md-2">
+                    <h3>Sizes</h3>
+                    <div class="row">
+                    
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="XS">
+                            </div>
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="S">
+                            </div>
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="M">
+                            </div>
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="ML">
+                            </div>
+                    </div>
 
-				</div>
+                    <div class="row">
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="L">
+                            </div>
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="XL">
+                            </div>
+                            <div class="col-md-3">
+                                <input class="btn btn-default center-btn-text" type="button" value="XXL">
+                            </div>
+                    </div>
+                    <div class="button-size">
+                        <p id="fade-text">Leave a star on Github if this repository was useful ;)</p>
+                        <div class="text-center btn-star">
+                            <button type="button" class="btn btn-light">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                            </button>
+                            <button type="button" class="btn btn-light">848</button>
+                        </div>
+                    </div>
 
-			
-			</div>
-		</nav>
+                </div>
 
-		<div class="row2">
-			<div class="col-md-2">
-				
-			</div>
-			
-			<div class="col-md-10">
-				<div class="col-md-2 col1">
-					
-						<img src="Images/images.jpeg" alt="pic1" height="300px" width="200px">
-					
-					<div class="caption">
-						Cat Tee Orange T-shirt
-						<p>
-							$ 10.90
-						or 9*$1.21	
-						</p>
-						<footer class="inside">
-							Add to cart
-						</footer>
-					</div>
-				</div>
-				<div class="col-md-2 col2">
-					
-						<img src="Images/images3.jpeg" alt="pic2 height="300px" width="200px">
-				
-					<div class="caption">
-						Cat Tee Orange T-shirt
-						<p>
-							$ 10.90s
-						or 9*$1.21	
-						</p>
-						<footer class="inside">
-							Add to cart
-						</footer>
-					</div>
-				</div>
-				<div class="col-md-2"></div>
-				<div class="col-md-2"></div>
-			</div>
-			
-		</div>
+                <!---RIGHT SIDE OF THE PAGE-->
+
+                <div class="col-md-10">
+                    <div class="row">
+                
+                                <div class="col-md-8">
+                                    <p>16 Product(s) Found</p>
+                                </div>
+                                <div class=" col-md-4 option-select ">
+                                    <label for="Shirts">Order by</label>
+                                    <select name="orders" id="orders">
+                                        <option value="Select">Select</option>
+                                        <option value="Type">Type</option>
+                                        <option value="Sizes">Sizes</option>
+                                        <option value="Prices">Prices</option>
+                                    </select>
+                                </div>
+                    
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (13).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Cat Tee black T-shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>19<small>.45</small></p>
+                                    <p class="text-muted text-center uder-big">or 9 *$1.45</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images.jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Dark Thug Brown shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>29<small>.45</small></p>
+                                    <p class="text-muted text-center uder-big">or 5 *$5.89</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (6).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Ash SLim fit Designer</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>9<small>.00</small></p>
+                                    <p class="text-muted text-center uder-big">or 3 *$3.00</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (7).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Navy Green T-shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>14<small>.00</small></p>
+                                    <p class="text-muted text-center uder-big">or 5 *$2.80</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (8).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">All-Out shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>13<small>.25</small></p>
+                                    <p class="text-muted text-center uder-big">or 3 *$4.42</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (9).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Polo T shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>10<small>.90</small></p>
+                                    <p class="text-muted text-center uder-big">or 9 *$1.21</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (10).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Pose Black</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>17<small>.90</small></p>
+                                    <p class="text-muted text-center uder-big">or 3 *$1.21</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (11).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">White La coste</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>14<small>.90</small></p>
+                                    <p class="text-muted text-center uder-big">or 7 *$2.13</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (12).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Black La coste</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>20<small>.65</small></p>
+                                    <p class="text-muted text-center uder-big">or 6 *$0.45</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (14).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Sexy striped T-shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>53<small>.15</small></p>
+                                    <p class="text-muted text-center uder-big">or 7 *$1.00</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (15).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Fruit of the Loom T-shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>12<small>.75</small></p>
+                                    <p class="text-muted text-center uder-big">or 3 *$5.45</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (16).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">White Tattooed T-shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>11<small>.45</small></p>
+                                    <p class="text-muted text-center uder-big">or 9 *$0.25</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (17).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Red Striped shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>91<small>.98</small></p>
+                                    <p class="text-muted text-center uder-big">or 9 *$9.45</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (18).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Printed T-shirt</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>76<small>.45</small></p>
+                                    <p class="text-muted text-center uder-big">or 7 *$6.15</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (19).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Addidas Black</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>39<small>.25</small></p>
+                                    <p class="text-muted text-center uder-big">or 4 *$2.45</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card card-product">
+                                    <div class="top-right bg-dark text-white px-2">Free shipping</div>
+                                <img src="Images/images (20).jpeg" alt="" class="img-thumbnail img-responsive">
+                                <div id="order-description justify-content-center">
+                                    <h4 class="text-center">Addidas long Sleeve</h4>
+                                    <hr class="text-center pt-2"><br>
+                                    <p class="text-center big"><small>$</small>39<small>.75</small></p>
+                                    <p class="text-muted text-center uder-big">or 8 *$3.45</p>
+                                </div>
+                                <button class="btn bg-dark">
+                                    <h5 class="card-text text-white text-center">Add to Cart</h5>
+                                </button>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---SECOND ROW-->
+
+   
+    
 
 
 
-		
-
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-10"></div>
-		</div>
-
-	</div>
 
 
-
-<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
